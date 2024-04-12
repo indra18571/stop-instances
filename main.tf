@@ -8,8 +8,7 @@ data "aws_instances" "vpc-instances" {
 output "instance-ids" {
   value = data.aws_instances.vpc-instances.ids
 }
-/*
+
 module "stop-instance" {
   source = "./stop-ec2"
 }
-*/
